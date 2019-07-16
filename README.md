@@ -22,6 +22,7 @@ We're creating a site that enables you to enter an artist name and look get some
   
 - .getignor
 - travis.yml
+- .env
 - package.json
 
 
