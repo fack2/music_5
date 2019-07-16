@@ -8,6 +8,25 @@ We're creating a site that enables you to enter an artist name and look get some
 ## WireFrame:
 ![Screenshot from 2019-07-16 12-26-02](https://user-images.githubusercontent.com/47992412/61283031-2143d400-a7c5-11e9-8305-4f1d21414bca.png)
 
+## file strcutre 
+- public
+  - dom.js
+  - index.html
+  - style.css
+  
+- src
+  - handler.js
+  - router.js
+  - server.js
+  - test.js
+  
+- .getignor
+- travis.yml
+- .env
+- package.json
+
+
+
 ## travis link
 [![Build Status](https://travis-ci.org/fack2/music_5.svg?branch=master)](https://travis-ci.org/fack2/music_5)
 
