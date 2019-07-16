@@ -1,0 +1,21 @@
+{
+  "name": "music_5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "node src/test.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fack2/music_5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fack2/music_5/issues"
+  },
+  "homepage": "https://github.com/fack2/music_5#readme"
+}
