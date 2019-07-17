@@ -30,6 +30,9 @@ We're creating a site that enables you to enter an artist name and look get some
 ## travis link
 [![Build Status](https://travis-ci.org/fack2/music_5.svg?branch=master)](https://travis-ci.org/fack2/music_5)
 
+## website 
+[musicSearch](https://music-search-artist.herokuapp.com/)
+
 
 
  ## Team Member :
