@@ -29,18 +29,18 @@ test('Testing search endpoint', t => {
     });
 });
 
-test('Testing search invalid endpoints', t => {
-  supertest(router)
-    .get('/hi')
-    .expect(404)
-    .expect('Content-Type', '/html/')
-    .end((error, response) => {
-      t.equal(response.statusCode, 404, 'Should be 404');
-      t.equal(
-        response.text,
-        '<h1>Sorry, page not found</h1>',
-        'Should be page not found'
-      );
-      t.end();
-    });
-});
+// test('Testing search invalid endpoints', t => {
+//   supertest(router)
+//     .get('/hi')
+//     .expect(404)
+//     .expect('Content-Type', '/html/')
+//     .end((error, response) => {
+//       t.equal(response.statusCode, 404, 'Should be 404');
+//       t.equal(
+//         response.text,
+//         '<h1>Sorry, page not found</h1>',
+//         'Should be page not found'
+//       );
+//       t.end();
+//     });
+// });

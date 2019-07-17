@@ -50,9 +50,14 @@ const searchHandler = (req, response, url) => {
       `https://www.theaudiodb.com/api/v1/json/1/search.php?s=${artistName}`,
       (error, res, body) => {
         const data = JSON.parse(body);
+        if (!data.artists) {
+          response.end('no data');
+          return;
+        }
         let idArtist = data.artists[0].idArtist;
         let strArtistBanner = data.artists[0].strArtistBanner;
         let strStyle = data.artists[0].strStyle;
+
         request(
           `https://www.theaudiodb.com/api/v1/json/195003/mvid.php?i=${idArtist}`,
           (error, res, body) => {
