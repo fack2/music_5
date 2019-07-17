@@ -7,10 +7,13 @@ let request = (url, cb) => {
       return cb(data);
     });
 };
-const searchButton = document.getElementById('image');
-searchButton.accessKeyLabel('click', () => {
-  request('/search', searchedResult => {
+const searchButton = document.getElementById('searchButton');
+searchButton.addEventListener('click', () => {
+  const inputValue = document.getElementById('inputOne').value;
+  console.log(inputValue);
+  request('/search?${inputValue}', searchedResult => {
     //what happened when search button clicked
+    console.log(inputValue);
     console.log('hell');
   });
 });
