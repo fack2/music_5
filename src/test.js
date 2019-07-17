@@ -25,11 +25,7 @@ test("Testing search endpoint", t => {
 		.expect("Content-Type", "/json/")
 		.end((error, response) => {
 			console.log(response);
-			t.equal(
-				Object.keys(response).length,
-				35,
-				"Should be an obj with 35 element"
-			);
+			t.equal(response.statusCode, 200, "Status should be 200");
 			t.end();
 		});
 });
