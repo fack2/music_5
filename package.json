@@ -24,9 +24,14 @@
 	"homepage": "https://github.com/fack2/music_5#readme",
 	"devDependencies": {
 		"eslint": "^6.0.1",
+		"node": "^12.6.0",
 		"nodemon": "^1.19.1",
 		"supertest": "^4.0.2",
 		"tap-spec": "^5.0.0",
 		"tape": "^4.11.0"
+	},
+	"dependencies": {
+		"querystring": "^0.2.0",
+		"request": "^2.88.0"
 	}
 }

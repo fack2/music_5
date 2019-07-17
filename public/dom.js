@@ -12,21 +12,22 @@ const result = (url, cb) => {
     });
 };
 
-const button = document.getElementById("button");
-button.addEventListener("click", function() {
-  const ul = document.getElementById("ul");
-  document.body.style.backgroundImage = "none";
-  const input = document.getElementById("input");
+const searchButton = document.getElementById('button');
+searchButton.addEventListener('click', function(e) {
+  e.preventDefault();
+  const ul = document.getElementById('ul');
+  document.body.style.backgroundImage = 'none';
+  const input = document.getElementById('input');
   const inputValue = input.value;
   if (inputValue.length === 0 || inputValue === /\S/) {
-    alert("Please enter an artist name");
+    alert('Please enter an artist name');
   } else {
     result(`/search?${inputValue}`, data => {
       // const banner = document.getElementById("banner");
       // const image = banner.gitElementBYTagName("IMG);
       // image.src = "";
       data.forEach(ele => {
-        const li = ul.creatElement("LI");
+        const li = ul.creatElement('LI');
         li.innerText = ele;
         ul.appendChild(li);
       });
