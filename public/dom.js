@@ -7,9 +7,10 @@ let request = (url, cb) => {
       return cb(data);
     });
 };
-const searchButton = document.getElementById('search');
+const searchButton = document.getElementById('image');
 searchButton.accessKeyLabel('click', () => {
   request('/search', searchedResult => {
     //what happened when search button clicked
+    console.log('hell');
   });
 });

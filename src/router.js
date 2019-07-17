@@ -1,4 +1,4 @@
-const { homeHandler, searchHandler } = require('./handler');
+const { homeHandler } = require('./handler');
 
 const router = (request, response) => {
   if (request.url === '/') {
@@ -12,7 +12,7 @@ const router = (request, response) => {
     response.end(JSON.stringify(arr));
     //don`t understand why use that!!!!!
     //should go to handler :
-    searchHandler(request, response);
+    // searchHandler(request, response);
   } else {
     response.writeHead(404, { 'Content-Type': 'text/html' });
     response.end('<h1>Sorry, page not found</h1>');

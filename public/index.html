@@ -4,12 +4,40 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Music search</title>
-    <link href="./public/style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <a href="https://icons8.com/icon/114896/google-web-search"></a>
   </head>
 
   <body>
-    <!-- i added this button tag -->
-    <button id="search">search</button>
-    <script src="./public/script.js"></script>
+    <div class="container">
+      <img
+        class="logo"
+        src="https://img.icons8.com/bubbles/2x/music.png"
+        alt=""
+      />
+      <form>
+        <input
+          class="search"
+          type="text"
+          placeholder="Artist Name..."
+          name="search"
+        />
+
+        <!-- i think that should change , cause when i try to add listener is not work  -->
+        <!-- what about use this without server ?
+        <a
+          href="path of your html page where you want to redirect"
+          title="A general title"
+          ><img src="source of the image" alt="alternate text"
+        /></a> -->
+
+        <img
+          class="searchBtn"
+          id="search"
+          src="https://img.icons8.com/cute-clipart/64/000000/search.png"
+        />
+      </form>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
