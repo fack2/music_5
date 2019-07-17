@@ -1,19 +1,33 @@
-let request = (url, cb) => {
+const result = (url, cb) => {
   fetch(url)
     .then(response => {
       return response.json();
     })
     .then(data => {
       return cb(data);
+    })
+
+    .catch(error => {
+      console.log(error);
     });
 };
-const searchButton = document.getElementById('searchButton');
-searchButton.addEventListener('click', () => {
-  const inputValue = document.getElementById('inputOne').value;
-  console.log(inputValue);
-  request('/search?${inputValue}', searchedResult => {
-    //what happened when search button clicked
-    console.log(inputValue);
-    console.log('hell');
+
+const searchButton = document.getElementById('button');
+searchButton.addEventListener('click', function(e) {
+  e.preventDefault();
+  const ul = document.getElementById('ul');
+  document.body.style.backgroundImage = 'none';
+  const input = document.getElementById('input');
+  const inputValue = input.value;
+
+  result(`/search?${inputValue}`, data => {
+    // const banner = document.getElementById("banner");
+    // const image = banner.gitElementBYTagName("IMG);
+    // image.src = "";
+    // data.forEach(ele => {
+    //   const li = ul.creatElement('LI');
+    //   li.innerText = ele;
+    //   ul.appendChild(li);
+    // });
   });
 });
