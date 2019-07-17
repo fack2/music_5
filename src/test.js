@@ -20,11 +20,16 @@ test("Testing search endpoint", t => {
 		strTrack: "strTrack"
 	};
 	supertest(router)
-		.get("/search")
+		.get("/search?adele")
 		.expect(200)
 		.expect("Content-Type", "/json/")
 		.end((error, response) => {
-			t.deepEqual(response.body, obj, "Should be an obj");
+			console.log(response);
+			t.equal(
+				Object.keys(response).length,
+				35,
+				"Should be an obj with 35 element"
+			);
 			t.end();
 		});
 });

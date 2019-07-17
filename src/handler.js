@@ -38,7 +38,8 @@ const publicHandler = (req, response, url) => {
 	});
 };
 const searchHandler = (req, response, url) => {
-	const artistName = url.split("?")[1];
+	const x = req.url;
+	const artistName = x.split("?")[1];
 
 	if (artistName == " ") {
 		response.writeHead(404, { "Content-Type": "text/html" });
@@ -74,7 +75,7 @@ const searchHandler = (req, response, url) => {
 							strTrack: strTrack
 						};
 
-						console.log("obj", obj);
+						console.log(response);
 						response.end(JSON.stringify(obj));
 					}
 				);
