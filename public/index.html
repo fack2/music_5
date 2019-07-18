@@ -7,18 +7,19 @@
     <title>Music search</title>
     <link href="./public/style.css" rel="stylesheet" />
     <link rel="icon" href="https://img.icons8.com/bubbles/2x/music.png" />
-    <a href="https://icons8.com/icon/114896/google-web-search"></a>
+    <a href="https://icons8.com/icon/114896/google-web-search" aria-label="site icon"></a>
 </head>
 
 <body>
     <div class="container">
         <img class="logo" src="https://img.icons8.com/clouds/2x/music.png" alt="logo" />
         <form class="search-wrapper cf">
-            <input id="input" type="text" placeholder="Search here..." required="" />
-            <button id="button" type="submit">Search</button>
+            <label for="input"> <input id="input" type="text" placeholder="Enter an artist name ..." required="" />
+            </label>
+            <label for="button"><button id="button" type="submit">Search</button> </label>
         </form>
     </div>
-    <div id="banner"><img id="bannerImg" class="bannerImg" ult="banner img" src="" /></div>
+    <div id="banner"><img id="bannerImg" class="bannerImg" alt="" src="" /></div>
     <ul id="ul"></ul>
     <script src="./public/dom.js"></script>
 </body>
