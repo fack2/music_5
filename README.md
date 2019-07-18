@@ -1,6 +1,9 @@
 # Music_5:
 We're creating a site that enables you to enter an artist name and look get some information about them.
 
+## website 
+[musicSearch](https://musicapp5.herokuapp.com/)
+
 ## User-Journey:
 1. A user should be able to enter an artist name in the input field.
 2. A user should be able to click a seach button and see the result on the screen.
@@ -29,9 +32,6 @@ We're creating a site that enables you to enter an artist name and look get some
 
 ## travis link
 [![Build Status](https://travis-ci.org/fack2/music_5.svg?branch=master)](https://travis-ci.org/fack2/music_5)
-
-## website 
-[musicSearch](https://music-search-artist.herokuapp.com/)
 
 
 
