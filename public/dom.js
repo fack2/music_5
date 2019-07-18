@@ -26,19 +26,17 @@ searchButton.addEventListener('click', function(e) {
             const image = document.getElementById('bannerImg');
             image.setAttribute('src', data.bannerImg);
 
+
             for (
-                let i = 0; i < data.arrayOfSongs.length && i < data.strTrack.length; i++
-            ) {
+                let i = 0; i < data.arrayOfSongs.length && i < data.strTrack.length; i++) {
                 const list = document.createElement('LI');
-                list.style.textAlign = "center";
+                list.setAttribute("class", "list")
+
                 const songTitle = document.createElement('h1');
-                songTitle.style.fontSize = "20px";
-                songTitle.style.textAlign = "center";
-                songTitle.style.marginBottom = "10px";
+                songTitle.setAttribute('class', "songTitle")
+                const vid = document.createElement('iframe');
 
-                var vid = document.createElement('iframe');
-
-                const newUrl = data.arrayOfSongs[i].replace('watch', 'embed');
+                const newUrl = data.arrayOfSongs[i].replace('watch?v=', 'embed/');
 
                 vid.src = newUrl;
                 songTitle.innerText = data.strTrack[i];
@@ -49,6 +47,6 @@ searchButton.addEventListener('click', function(e) {
                 ul.appendChild(songTitle);
             }
         });
-        ul.innerHTML = '';
+        ul.innerText = '';
     }
 });

@@ -76,3 +76,13 @@ body {
     width: 414px;
     margin-bottom: 31px;
 }
+
+.list {
+    text-align: center
+}
+
+.songTitle {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
