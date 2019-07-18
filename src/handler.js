@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const request = require('request');
-require("env2")(".env")
+require("env2")("./env")
 
 const homeHandler = (req, response) => {
     const filePath = path.join(__dirname, '..', 'public', 'index.html');
