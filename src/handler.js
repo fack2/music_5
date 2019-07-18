@@ -38,8 +38,10 @@ const publicHandler = (req, response, url) => {
   });
 };
 const searchHandler = (req, response, url) => {
+
   const x = req.url;
   const artistName = x.split('?')[1];
+
 
   if (artistName == ' ') {
     response.writeHead(404, { 'Content-Type': 'text/html' });
