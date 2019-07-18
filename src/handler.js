@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const request = require('request');
-
+require("env2")(".env")
 
 const homeHandler = (req, response) => {
     const filePath = path.join(__dirname, '..', 'public', 'index.html');
@@ -76,9 +76,9 @@ const searchHandler = (req, response, url) => {
                 const strStyle = data.artists[0].strStyle;
 
 
-
+                const apiKey = process.env.API_KEY
                 request(
-                    `https://www.theaudiodb.com/api/v1/json/195003/mvid.php?i=${idArtist}`,
+                    `https://www.theaudiodb.com/api/v1/json/${apiKey}/mvid.php?i=${idArtist}`,
                     (error, res, body) => {
                         const apiData = JSON.parse(body);
                         const VideosArray = apiData.mvids;
