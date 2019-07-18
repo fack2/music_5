@@ -71,3 +71,8 @@ body {
     top: 12px;
     left: -6px;
 }
+
+.bannerImg {
+    width: 414px;
+    margin-bottom: 31px;
+}
