@@ -41,3 +41,7 @@ We're creating a site that enables you to enter an artist name and look get some
  - [Nadeen](https://github.com/Nadeen123)
  - [Rawan](https://github.com/95Rawan)
  - [Sara](https://github.com/sara219)
+ 
+ 
+ # note :
+  response take a few minutes more than expect
