@@ -34,8 +34,20 @@ searchButton.addEventListener('click', function(e) {
         const list = document.createElement('LI');
         const songTitle = document.createElement('h1');
 
+
         list.innerText = data.arrayOfSongs[i];
         songTitle.innerText = data.strTrack[i];
+
+
+     
+        var vid = document.createElement('iframe');
+
+        const newUrl = data.arrayOfSongs[i].replace('watch', 'embed');
+
+        vid.src = newUrl;
+        songTitle.innerText = data.strTrack[i];
+
+        list.appendChild(vid);
 
         ul.appendChild(list);
         ul.appendChild(songTitle);
